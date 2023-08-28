@@ -1,4 +1,7 @@
 import Card from "../components/Card";
+import LinksCard from "../components/LinksCard";
+import { fetchTrending } from '../api/games'; 
+import { useState, useEffect } from "react";
 
 function LandingPage() {
     // Example data with added "column" property
@@ -10,6 +13,17 @@ function LandingPage() {
         // ... add more mock articles
     ];
 
+    const [trending, setTrending] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const data = await fetchTrending();
+            setTrending(data);
+        }
+
+        fetchData();
+    }, []);
+
     // Function to filter and render cards based on the column
     const renderCardsForColumn = (columnName) => {
         return mockData
@@ -18,10 +32,16 @@ function LandingPage() {
     };
 
     return (
-        <div className="grid grid-cols-12 gap-4">
+        <div className="container mx-auto grid grid-cols-12 gap-4">
             {/* Left Column */}
             <div className="col-span-3">
-                {renderCardsForColumn('left')}
+                {trending.map(game => (
+                  <LinksCard 
+                  spotLight = "Games Trending"
+                  key = {game.id}
+                  title = {game.game_title}
+                  />
+                ))}
             </div>
             {/* Center Column */}
             <div className="col-span-6">

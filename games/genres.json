@@ -1,0 +1,80 @@
+[
+    {
+      "model": "games.genre",
+      "pk": 1,
+      "fields": {
+        "name": "Action"
+      }
+    },
+    {
+      "model": "games.genre",
+      "pk": 2,
+      "fields": {
+        "name": "Adventure"
+      }
+    },
+    {
+      "model": "games.genre",
+      "pk": 3,
+      "fields": {
+        "name": "Role-Playing"
+      }
+    },
+    {
+        "model": "games.genre",
+        "pk": 4,
+        "fields": {
+          "name": "Strategy"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 5,
+        "fields": {
+          "name": "Sports"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 6,
+        "fields": {
+          "name": "Fighting"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 7,
+        "fields": {
+          "name": "Indie"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 8,
+        "fields": {
+          "name": "Sandbox"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 9,
+        "fields": {
+          "name": "First Person Shooter"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 10,
+        "fields": {
+          "name": "MOAB"
+        }
+      },
+      {
+        "model": "games.genre",
+        "pk": 11,
+        "fields": {
+          "name": "MMORPG"
+        }
+      }
+  ]
+  
