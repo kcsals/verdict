@@ -6,6 +6,12 @@ class Genre(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Platform(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
 
 class Game(models.Model):
         
@@ -14,6 +20,7 @@ class Game(models.Model):
     developer = models.CharField(max_length=200, null=True, blank=True)
     publisher = models.CharField(max_length=200, null=True, blank=True)
     genres = models.ManyToManyField(Genre)
+    platforms = models.ManyToManyField(Platform)
     cover_image = models.ImageField(upload_to='game_covers/', null=True, blank=True)  # Image field added
     
     slug = models.SlugField(unique=True, blank=True)

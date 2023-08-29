@@ -1,5 +1,6 @@
 import React from 'react';
-import { AiOutlineInfoCircle, AiOutlineSearch, AiOutlineHome, AiFillCaretDown } from 'react-icons/ai'
+import { AiOutlineInfoCircle, AiOutlineSearch, AiFillCaretDown, AiFillYoutube, AiFillTwitterSquare } from 'react-icons/ai'
+import { BiPodcast } from 'react-icons/bi'
 import Link from "../components/Link";
 
 
@@ -21,16 +22,17 @@ function Navbar() {
           
           
           <ul className="flex space-x-4 ml-4">
-            <li><Link to="/movies" href="#" >Movies <AiFillCaretDown className="ml-2 mt-1"/></Link></li>
-            <li><Link to="/shows" href="#" >Shows <AiFillCaretDown className="ml-2 mt-1"/></Link></li>
             <li><Link to="/games" href="#" >Games <AiFillCaretDown className="ml-2 mt-1"/></Link></li>
+            <li><Link to="/shows" href="#" >Shows <AiFillCaretDown className="ml-2 mt-1"/></Link></li>
             <li><Link to="/hardware" href="#" >Hardware <AiFillCaretDown className="ml-2 mt-1"/></Link></li>
           </ul>
         </div>
   
         <div>
           <ul className="flex space-x-4">
-            <li><a href="#" className="text-white hover:text-red-600"><AiOutlineHome className="text-xl" /></a></li>
+            <li><a href="https://twitter.com/TheVerdictio" target="_blank" className="text-white hover:text-red-600"><AiFillTwitterSquare className="text-xl" /></a></li>
+            <li><a href="https://www.youtube.com/@TheVerdictIO" target="_blank" className="text-white hover:text-red-600"><AiFillYoutube className="text-xl" /></a></li>
+            <li><a href="#" className="text-white hover:text-red-600"><BiPodcast className="text-xl" /></a></li>
             <li><a href="#" className="text-white hover:text-red-600"><AiOutlineInfoCircle className="text-xl" /></a></li>
             <li><a href="#" className="text-white hover:text-red-600"><AiOutlineSearch className="text-xl"/> </a></li>
           </ul>

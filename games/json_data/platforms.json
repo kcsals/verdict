@@ -1,0 +1,45 @@
+[
+    {
+        "model": "games.platform",
+        "pk": 1,
+        "fields": {
+            "name": "PC"
+        }
+    },
+    {
+        "model": "games.platform",
+        "pk": 2,
+        "fields": {
+            "name": "Xbox Series"
+        }
+    },
+        {
+        "model": "games.platform",
+        "pk": 3,
+        "fields": {
+            "name": "Xbox One"
+        }
+    },
+        {
+        "model": "games.platform",
+        "pk": 4,
+        "fields": {
+            "name": "Switch"
+        }
+    },
+    {
+        "model": "games.platform",
+        "pk": 5,
+        "fields": {
+            "name": "PlayStation 5"
+        }
+    },
+    {
+        "model": "games.platform",
+        "pk": 6,
+        "fields": {
+            "name": "PlayStation 4"
+        }
+    }
+]
+  

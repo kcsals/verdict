@@ -1,5 +1,4 @@
 import Route from "./components/Route";
-import MoviePage from './pages/MoviePage';
 import GamePage from './pages/GamePage';
 import ShowPage from './pages/ShowPage';
 import HardwarePage from './pages/HardwarePage';
@@ -18,9 +17,6 @@ function App() {
       <div>
         <Route path="/">
           <LandingPage />
-        </Route>
-        <Route path="/movies">
-          <MoviePage />
         </Route>
         <Route path="/shows">
           <ShowPage />
